@@ -1,0 +1,87 @@
+{
+	"ImportPath": "github.com/IrfanFaizullabhoy/pacific",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v74",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Rev": "1f49d83d9aa00e6ce4fc8258c71cc7786aec968a"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/http2",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/http2/hpack",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/idna",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/internal/timeseries",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/lex/httplex",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/trace",
+			"Rev": "71a035914f99bb58fe82eac0f1289f10963d876c"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/codes",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/credentials",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/grpclog",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/internal",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/metadata",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/naming",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/peer",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc/transport",
+			"Comment": "v1.0.1-GA-55-g71d2ea4",
+			"Rev": "71d2ea4f75286a63b606aca2422cd17ff37fd5b8"
+		}
+	]
+}

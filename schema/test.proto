@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package pb;
+
+service PassObject {
+  //sends an object to the server
+  rpc sendObject(Object) returns (Response) {}
+
+  //receives object from the server
+  rpc receiveObject(ObjectRequest) returns (Object) {}
+}
+
+message Object {
+  string name = 1;
+  uint32 size = 2;
+}
+
+message ObjectRequest {
+  string name = 1;
+}
+
+message Response {
+  string response = 1;
+}
