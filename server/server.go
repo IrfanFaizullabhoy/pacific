@@ -1,4 +1,4 @@
-package main;
+package main
 
 import (
 	"fmt"
@@ -14,12 +14,11 @@ const (
 
 type passObjectServer struct{}
 
-
 // runs whenever request `SendObject` is received
 func (server *passObjectServer) SendObject(ctx context.Context, in *pb.Object) (*pb.Response, error) {
 	// add object to database
 	fmt.Println("Received the object: ", in.Name)
-	response := pb.Response {
+	response := pb.Response{
 		Response: in.Name,
 	}
 	return &response, nil
@@ -28,7 +27,7 @@ func (server *passObjectServer) SendObject(ctx context.Context, in *pb.Object) (
 // runs whenever request `ReceiveObject` is received
 func (server *passObjectServer) ReceiveObject(ctx context.Context, in *pb.ObjectRequest) (*pb.Object, error) {
 	// query database for object
-	object := pb.Object {
+	object := pb.Object{
 		Name: in.Name,
 		Size: 1,
 	}

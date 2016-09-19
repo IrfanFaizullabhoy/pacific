@@ -1,4 +1,4 @@
-package main;
+package main
 
 import (
 	"fmt"
@@ -33,7 +33,7 @@ func main() {
 	client := pb.NewPassObjectClient(conn)
 
 	// explicit definition of object I am sending to server
-	object := pb.Object {
+	object := pb.Object{
 		Name: "firstObject",
 		Size: 1,
 	}
@@ -45,12 +45,9 @@ func main() {
 
 	// use object name to receive object
 	_, err1 := client.ReceiveObject(context.Background(), &pb.ObjectRequest{
-															Name: object.Name,
-															})
+		Name: object.Name,
+	})
 	check(err1)
 
 	fmt.Println("Success, received the following object")
 }
-
-
-
