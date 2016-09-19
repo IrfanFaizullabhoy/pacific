@@ -2,15 +2,12 @@ package main
 
 import (
 	"fmt"
-
+	"os"
 	pb "github.com/IrfanFaizullabhoy/pacific/schema"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
 
-const (
-	address = "localhost:8080"
-)
 
 func check(err error) {
 	if err != nil {
@@ -19,7 +16,8 @@ func check(err error) {
 }
 
 func main() {
-
+	// use docker env vars to set server port and address
+	address := os.Getenv("SERVER_PORT_8080_TCP_ADDR") + ":" + os.Getenv("SERVER_PORT_8080_TCP_PORT")
 	// dials connection to the server
 	conn, err := grpc.Dial(address, grpc.WithInsecure())
 	if err != nil {

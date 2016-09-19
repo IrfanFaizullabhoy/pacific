@@ -1,0 +1,35 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    expose:
+      - "5432"
+    ports:
+       - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=pacific
+      - POSTGRES_DB=object
+
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=pacific
+      - DB_PORT_5432_TCP_ADDR=db
+
+  client:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    depends_on:
+      - server
+    links:
+      - server
+    environment:
+      - SERVER_PORT_8080_TCP_ADDR=server
+      - SERVER_PORT_8080_TCP_PORT=8080
