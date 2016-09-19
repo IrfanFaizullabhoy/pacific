@@ -1,7 +1,8 @@
 pacific
 -------
 
-****run instructions****
+***run instructions**
+
 `docker-compose build`
 `docker-compose up`
 
