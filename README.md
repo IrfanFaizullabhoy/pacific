@@ -3,9 +3,10 @@ pacific
 
 A minimalist project seed for the following technologies
 
-+ Golang
++ Golang 1.7
 + Docker
-+ GRPC
++ RPC
 + Protobuf
 + Postgres
 + Alpine Linux
++ Vendoring
