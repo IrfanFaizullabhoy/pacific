@@ -10,7 +10,7 @@ A minimalist project seed for the following technologies
 
 + Golang 1.7
 + Docker
-+ RPC
++ GRPC
 + Protobuf
 + Postgres
 + Alpine Linux
